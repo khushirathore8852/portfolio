@@ -1,0 +1,188 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Cognifyz Responsive Page
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+ </head>
+ <body class="bg-gray-50 min-h-screen flex flex-col">
+  <!-- Navigation -->
+  <nav class="bg-white shadow-md fixed w-full z-30 top-0 left-0">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between h-16">
+     <div class="flex items-center">
+      <a class="text-2xl font-semibold text-indigo-600" href="#">
+       Cognifyz
+      </a>
+     </div>
+     <div class="hidden md:flex md:items-center md:space-x-8">
+      <a class="text-gray-700 hover:text-indigo-600 font-medium" href="#">
+       Home
+      </a>
+      <a class="text-gray-700 hover:text-indigo-600 font-medium" href="#">
+       About
+      </a>
+      <a class="text-gray-700 hover:text-indigo-600 font-medium" href="#">
+       Services
+      </a>
+      <a class="text-gray-700 hover:text-indigo-600 font-medium" href="#">
+       Contact
+      </a>
+     </div>
+     <div class="flex items-center md:hidden">
+      <button aria-expanded="false" aria-label="Toggle menu" class="text-gray-700 hover:text-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-600" id="mobile-menu-button">
+       <i class="fas fa-bars fa-lg">
+       </i>
+      </button>
+     </div>
+    </div>
+   </div>
+   <div class="md:hidden hidden px-4 pb-4 space-y-2 bg-white shadow-inner" id="mobile-menu">
+    <a class="block text-gray-700 hover:text-indigo-600 font-medium" href="#">
+     Home
+    </a>
+    <a class="block text-gray-700 hover:text-indigo-600 font-medium" href="#">
+     About
+    </a>
+    <a class="block text-gray-700 hover:text-indigo-600 font-medium" href="#">
+     Services
+    </a>
+    <a class="block text-gray-700 hover:text-indigo-600 font-medium" href="#">
+     Contact
+    </a>
+   </div>
+  </nav>
+  <main class="flex-grow pt-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+   <header class="mb-10 text-center">
+    <h1 class="text-4xl font-extrabold text-indigo-700">
+     Cognifyz
+    </h1>
+    <p class="mt-2 text-lg text-gray-600">
+     Where Data Meets Intelligence Level 2
+    </p>
+    <p class="mt-1 text-sm text-gray-500 uppercase tracking-wide font-semibold">
+     Task 2
+    </p>
+   </header>
+   <!-- Responsive Grid Layout -->
+   <section aria-label="Responsive card grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+    <!-- Card 1 -->
+    <article class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+     <img alt="A modern data analytics dashboard with colorful charts and graphs on a computer screen" class="w-full h-48 object-cover" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/e527ff5d-30dc-4927-2b4f-9dda44dea2f5.jpg" width="600"/>
+     <div class="p-4 flex flex-col flex-grow">
+      <h2 class="text-lg font-semibold text-indigo-700 mb-2">
+       Data Analytics Dashboard
+      </h2>
+      <p class="text-gray-600 flex-grow">
+       Visualize your data with interactive charts and real-time updates.
+      </p>
+     </div>
+    </article>
+    <!-- Card 2 -->
+    <article class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+     <img alt="Artificial intelligence concept showing a robot hand touching a digital brain with glowing neural connections" class="w-full h-48 object-cover" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/966ac8ad-5f9e-44be-6a45-678bc97ed6fd.jpg" width="600"/>
+     <div class="p-4 flex flex-col flex-grow">
+      <h2 class="text-lg font-semibold text-indigo-700 mb-2">
+       AI &amp; Machine Learning
+      </h2>
+      <p class="text-gray-600 flex-grow">
+       Leverage AI to gain insights and automate complex decision-making processes.
+      </p>
+     </div>
+    </article>
+    <!-- Card 3 -->
+    <article class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+     <img alt="Cloud data storage concept with multiple servers connected to a cloud icon on a blue background" class="w-full h-48 object-cover" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/804b8e50-9836-4e76-c7fb-f94f885f171b.jpg" width="600"/>
+     <div class="p-4 flex flex-col flex-grow">
+      <h2 class="text-lg font-semibold text-indigo-700 mb-2">
+       Cloud Data Storage
+      </h2>
+      <p class="text-gray-600 flex-grow">
+       Secure and scalable cloud storage solutions for your business data.
+      </p>
+     </div>
+    </article>
+    <!-- Card 4 -->
+    <article class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+     <img alt="Business intelligence concept with a person analyzing charts and graphs on a transparent screen" class="w-full h-48 object-cover" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/a281d20a-bfa3-4b87-35d7-dc14243db0c2.jpg" width="600"/>
+     <div class="p-4 flex flex-col flex-grow">
+      <h2 class="text-lg font-semibold text-indigo-700 mb-2">
+       Business Intelligence
+      </h2>
+      <p class="text-gray-600 flex-grow">
+       Transform raw data into actionable insights to drive business growth.
+      </p>
+     </div>
+    </article>
+    <!-- Card 5 -->
+    <article class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+     <img alt="Colorful data visualization with bar charts, pie charts, and line graphs on a digital screen" class="w-full h-48 object-cover" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/af70245a-ecda-4ace-becb-02f8bfbad989.jpg" width="600"/>
+     <div class="p-4 flex flex-col flex-grow">
+      <h2 class="text-lg font-semibold text-indigo-700 mb-2">
+       Data Visualization
+      </h2>
+      <p class="text-gray-600 flex-grow">
+       Create stunning visual representations of complex datasets.
+      </p>
+     </div>
+    </article>
+    <!-- Card 6 -->
+    <article class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+     <img alt="Predictive analytics concept showing futuristic graphs and data points with a glowing trend line" class="w-full h-48 object-cover" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/bffd57b5-8596-43e3-b068-af1cd40f80ba.jpg" width="600"/>
+     <div class="p-4 flex flex-col flex-grow">
+      <h2 class="text-lg font-semibold text-indigo-700 mb-2">
+       Predictive Analytics
+      </h2>
+      <p class="text-gray-600 flex-grow">
+       Forecast trends and behaviors to make informed business decisions.
+      </p>
+     </div>
+    </article>
+    <!-- Card 7 -->
+    <article class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+     <img alt="Big data processing with multiple servers and data streams visualized as flowing lines" class="w-full h-48 object-cover" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/cc9d5155-9e68-4864-e1f8-a164b534d5d4.jpg" width="600"/>
+     <div class="p-4 flex flex-col flex-grow">
+      <h2 class="text-lg font-semibold text-indigo-700 mb-2">
+       Big Data Processing
+      </h2>
+      <p class="text-gray-600 flex-grow">
+       Handle massive datasets efficiently with cutting-edge technology.
+      </p>
+     </div>
+    </article>
+    <!-- Card 8 -->
+    <article class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+     <img alt="Data security concept with a digital lock and shield protecting data streams" class="w-full h-48 object-cover" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/437b547e-6a80-4b25-3974-12a054e8f1f2.jpg" width="600"/>
+     <div class="p-4 flex flex-col flex-grow">
+      <h2 class="text-lg font-semibold text-indigo-700 mb-2">
+       Data Security
+      </h2>
+      <p class="text-gray-600 flex-grow">
+       Protect your data with advanced encryption and security protocols.
+      </p>
+     </div>
+    </article>
+   </section>
+  </main>
+  <script>
+   const menuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuButton.addEventListener('click', () => {
+      const expanded = menuButton.getAttribute('aria-expanded') === 'true' || false;
+      menuButton.setAttribute('aria-expanded', !expanded);
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+ </body>
+</html>
